@@ -982,7 +982,7 @@
 
         <!-- Netflix Preview Window -->
         <control type="multiimage" description="Fanart">
-            <visible>[[Window.IsVisible(Home.xml) + Skin.HasSetting(homemenu.netflix) + !Skin.HasSetting(hide.homemenu.netflix.preview) + [$EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets]]] | [[[Control.IsVisible(510) | Control.IsVisible(520) | Control.IsVisible(521) | Control.IsVisible(522) | Control.IsVisible(523) | Control.IsVisible(524)] + !Skin.HasSetting(hide.views.netflix.preview)]]] + !Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(DialogMusicInfo.xml) + !Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(DialogPVRInfo.xml) + !Window.IsVisible(skin.arctic.zephyr.mod.script-gto-info.xml) + ![Skin.HasSetting(homemenu.clean.flix) + Window.IsVisible(Home.xml)]</visible>
+            <visible>[[Window.IsVisible(Home.xml) + Skin.HasSetting(homemenu.netflix) + !Skin.HasSetting(hide.homemenu.netflix.preview) + [$EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets]]] | [[[Control.IsVisible(510) | Control.IsVisible(520) | Control.IsVisible(521) | Control.IsVisible(522) | Control.IsVisible(523) | Control.IsVisible(524)] + !Skin.HasSetting(hide.views.netflix.preview)]]] + !Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(DialogMusicInfo.xml) + !Window.IsVisible(DialogAddonInfo.xml) + !Window.IsVisible(DialogPVRInfo.xml) + !Window.IsVisible(skin.arctic.zephyr.next.script-gto-info.xml) + ![Skin.HasSetting(homemenu.clean.flix) + Window.IsVisible(Home.xml)]</visible>
             <visible>!Player.HasMedia | [!Skin.HasSetting(global.showvideo) + Player.HasVideo] | [!Skin.HasSetting(global.showvisualisation) + Player.HasAudio] | [Skin.HasSetting(global.showvisualisation) + String.IsEmpty(Visualisation.Name) + Player.HasAudio]</visible>
             <visible>!Skin.HasSetting(global.hidefanart) | Window.IsVisible(home)</visible>
             <include>Animation.Background.OpenClose</include>
@@ -1978,6 +1978,17 @@
                 </include>
                 <visible>Skin.HasSetting(showbutton.video.director)</visible>
             </control>
+            <!-- Opens Kodi's native Manage Video Versions dialog, control id 14 is handled internally by DialogVideoInfo -->
+            <control type="radiobutton" id="14">
+                <onfocus>ClearProperty(moviecontent)</onfocus>
+                <onfocus>ClearProperty(ShowDisc)</onfocus>
+                <include>buttondimensions</include>
+                <include content="buttontextures">
+                    <param name="icon" value="buttonsdialogs/versions.png"/>
+                </include>
+                <visible>String.IsEqual(ListItem.DBType,movie)</visible>
+                <visible>!Skin.HasSetting(hidebutton.video.versions)</visible>
+            </control>
             <control type="radiobutton" id="9015">
                 <visible>String.IsEqual(ListItem.DBType,movie)</visible>
                 <onfocus condition="!String.IsEqual(Window.Property(moviecontent),6)">ClearProperty(moviecontent)</onfocus>
@@ -2807,6 +2818,14 @@
                         <align>left</align>
                         <onclick>RunScript(script.metadata.editor,dbid=$INFO[ListItem.DBID],type=$INFO[ListItem.DBType])</onclick>
                         <visible>System.AddonIsEnabled(script.metadata.editor)</visible>
+                    </control>
+                    <!-- Opens Kodi's native Manage Video Extras dialog, control id 15 is handled internally by DialogVideoInfo -->
+                    <control type="button" id="15">
+                        <include>DefContextButtonGradient</include>
+                        <label>31169</label>
+                        <align>left</align>
+                        <visible>String.IsEqual(ListItem.DBType,movie)</visible>
+                        <visible>!Skin.HasSetting(hidebutton.video.extras)</visible>
                     </control>
                     <control type="button" id="96">
                         <include>DefContextButtonGradient</include>

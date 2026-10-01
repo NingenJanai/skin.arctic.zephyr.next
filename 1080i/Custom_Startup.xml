@@ -57,7 +57,7 @@
                 <width>331</width>
                 <height>60</height>
                 <centertop>50%</centertop>
-                <texture>misc/matrix.png</texture>
+                <texture>misc/next.png</texture>
                 <animation effect="fade" start="0" end="100" time="500">Visible</animation>
 	            <animation effect="fade" start="100" end="0" time="500">WindowClose</animation>
                 <visible>String.IsEmpty(Skin.String(StartupPlaylist)) + String.IsEmpty(Skin.String(startupfanart.fallback)) + Control.HasFocus(3616)</visible>

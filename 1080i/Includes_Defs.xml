@@ -3540,6 +3540,36 @@
         </control>
         </definition>
     </include>
+
+    <include name="IndicatorPosterVersionsExtras">
+        <param name="left" value="$PARAM[left]" default="1"/>
+        <param name="top" value="$PARAM[top]" default="1"/>
+        <definition>
+        <control type="group">
+            <left>$PARAM[left]</left>
+            <top>$PARAM[top]</top>
+            <visible>ListItem.HasVideoVersions | ListItem.HasVideoExtras</visible>
+            <control type="image">
+                 <left>8</left>
+                 <top>8</top>
+                 <width>100</width>
+                 <height>100</height>
+                 <texture flipx="true" colordiffuse="$VAR[ColorIndicatorBackgroundNew]" background="true">misc/overlaywatched.png</texture>
+            </control>
+            <control type="label">
+                 <left>-9</left>
+                 <top>8</top>
+                 <align>center</align>
+                 <label>$VAR[IndicatorPosterVersionsExtrasLabel]</label>
+                 <width>100</width>
+                 <font>WatchedStates</font>
+                 <textcolor>$VAR[ColorIndicatorBackgroundLabel]</textcolor>
+                 <selectedcolor>$VAR[ColorIndicatorBackgroundLabel]</selectedcolor>
+                 <animation effect="rotate" center="auto" time="0" end="45" condition="true" loop="false">Conditional</animation>
+            </control>
+        </control>
+        </definition>
+    </include>
     
     <include name="IndicatorPoster301">
         <param name="right" value="$PARAM[right]" default="1"/>
@@ -4102,6 +4132,7 @@
         <include content="IndicatorPoster" condition="!Skin.HasSetting(hide.markers)">
             <param name="indicatorbackground" value="$PARAM[indicatorbackground]" />
         </include>
+        <include content="IndicatorPosterVersionsExtras" condition="!Skin.HasSetting(hide.markers)" />
         </definition>
     </include>
 
@@ -4459,6 +4490,7 @@
         <include content="IndicatorPoster" condition="!Skin.HasSetting(hide.markers)">
             <param name="indicatorbackground" value="$PARAM[indicatorbackground]" />
         </include>
+        <include content="IndicatorPosterVersionsExtras" condition="!Skin.HasSetting(hide.markers)" />
         </definition>
     </include>
 
@@ -4821,7 +4853,7 @@
                 <top>3</top>
                 <right>3</right>
                 <bottom>3</bottom>
-                <texture colordiffuse="$VAR[ColorSquares]" border="20">common/selectbox.png</texture>
+                <texture colordiffuse="$VAR[ColorSquares]" border="22">common/selectbox.png</texture>
                 <visible>Control.HasFocus($PARAM[id])</visible>
                 <include>Animation.SelectBoxHome</include>
             </control>
@@ -4830,7 +4862,7 @@
                 <top>3</top>
                 <right>3</right>
                 <bottom>3</bottom>
-                <texture colordiffuse="$VAR[ColorHighlightSelectbox2]" border="20">common/gradient-selectbox.png</texture>
+                <texture colordiffuse="$VAR[ColorHighlightSelectbox2]" border="22">common/gradient-selectbox.png</texture>
                 <visible>Control.HasFocus($PARAM[id])</visible>
                 <include>Animation.SelectBoxHome</include>
             </control>
@@ -4842,7 +4874,7 @@
                 <top>4</top>
                 <right>4</right>
                 <bottom>4</bottom>
-                <texture colordiffuse="$VAR[ColorSquares]" border="20">common/selectbox.png</texture>
+                <texture colordiffuse="$VAR[ColorSquares]" border="22">common/selectbox.png</texture>
                 <visible>Control.HasFocus($PARAM[id])</visible>
                 <include>Animation.SelectBoxHome</include>
             </control>
@@ -4851,7 +4883,7 @@
                 <top>4</top>
                 <right>4</right>
                 <bottom>4</bottom>
-                <texture colordiffuse="$VAR[ColorHighlightSelectbox2]" border="20">common/gradient-selectbox.png</texture>
+                <texture colordiffuse="$VAR[ColorHighlightSelectbox2]" border="22">common/gradient-selectbox.png</texture>
                 <visible>Control.HasFocus($PARAM[id])</visible>
                 <include>Animation.SelectBoxHome</include>
             </control>

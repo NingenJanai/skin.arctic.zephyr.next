@@ -146,6 +146,11 @@
         <value condition="String.IsEqual(ListItem.Overlay,OverlayUnwatched.png) + [$EXP[IsNewMovie] | $EXP[IsNewTVShow] | $EXP[IsNewEpisode]] + !Skin.HasSetting(hide.markers.newcontent)">$LOCALIZE[31494]</value>
     </variable>
 
+    <variable name="IndicatorPosterVersionsExtrasLabel">
+        <value condition="ListItem.HasVideoVersions">$LOCALIZE[40000]</value>
+        <value condition="ListItem.HasVideoExtras">$LOCALIZE[40211]</value>
+    </variable>
+
     <variable name="IndicatorFlagLabelIsResumable">
         <value condition="$EXP[IsTVShowInProgress]">$VAR[IndicatorFlagLabelIsTVShowInProgress]</value>
         <value condition="Skin.HasSetting(markers.inprogress.percentage) + !String.IsEmpty(ListItem.PercentPlayed) + !String.IsEqual(ListItem.PercentPlayed,0)">$INFO[ListItem.PercentPlayed,,%]</value>
@@ -1296,10 +1301,10 @@
     </variable>
 
     <variable name="DialogInfoLabel">
-        <value condition="Control.HasFocus(20) + Window.IsVisible(skin.arctic.zephyr.mod.script-gto-info.xml)">$ADDON[script.service.gto 30107]</value>
-        <value condition="Control.HasFocus(21) + Window.IsVisible(skin.arctic.zephyr.mod.script-gto-info.xml)">$ADDON[script.service.gto 30108]</value>
-        <value condition="Control.HasFocus(22) + Window.IsVisible(skin.arctic.zephyr.mod.script-gto-info.xml)">$ADDON[script.service.gto 30112]</value>
-        <value condition="Control.HasFocus(23) + Window.IsVisible(skin.arctic.zephyr.mod.script-gto-info.xml)">$ADDON[script.service.gto 30119]</value>
+        <value condition="Control.HasFocus(20) + Window.IsVisible(skin.arctic.zephyr.next.script-gto-info.xml)">$ADDON[script.service.gto 30107]</value>
+        <value condition="Control.HasFocus(21) + Window.IsVisible(skin.arctic.zephyr.next.script-gto-info.xml)">$ADDON[script.service.gto 30108]</value>
+        <value condition="Control.HasFocus(22) + Window.IsVisible(skin.arctic.zephyr.next.script-gto-info.xml)">$ADDON[script.service.gto 30112]</value>
+        <value condition="Control.HasFocus(23) + Window.IsVisible(skin.arctic.zephyr.next.script-gto-info.xml)">$ADDON[script.service.gto 30119]</value>
         <value condition="Control.HasFocus(13) + Window.IsVisible(DialogAddonInfo.xml)">$LOCALIZE[21340]</value>
         <value condition="Control.HasFocus(10) + Window.IsVisible(DialogAddonInfo.xml)">$LOCALIZE[24996]</value>
         <value condition="Control.HasFocus(9001) + Window.IsVisible(Custom_MovieSets.xml)">$LOCALIZE[208]</value>

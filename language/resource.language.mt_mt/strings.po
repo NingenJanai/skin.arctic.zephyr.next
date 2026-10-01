@@ -1,7 +1,7 @@
 # Kodi Media Center language file
 # Addon Name: Arctic: Zephyr - Reloaded
-# Addon id: skin.arctic.zephyr.mod
-# Addon Provider: jurialmunkey, beatmasterrs
+# Addon id: skin.arctic.zephyr.next
+# Addon Provider: ningenjanai
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"

@@ -2021,7 +2021,7 @@
                             <aspectratio scalediffuse="false">keep</aspectratio>
                             <height>47</height>
                             <left>385</left>
-                            <texture>misc/matrix.png</texture>
+                            <texture>misc/next.png</texture>
                         </control>
                         <control type="button" id="9907">
                             <width>1360</width>
@@ -2039,7 +2039,7 @@
                             <disabledcolor>PanelWhite70</disabledcolor>
                             <animation effect="slide" start="0" end="0,-298" time="150" condition="true">Conditional</animation>
                             <align>left</align>
-                            <label>v$INFO[System.AddonVersion(skin.arctic.zephyr.mod)]</label>
+                            <label>v$INFO[System.AddonVersion(skin.arctic.zephyr.next)]</label>
                         </control>
                         <control type="button" id="9911">
                             <width>1360</width>
@@ -3218,7 +3218,7 @@
                 <aspectratio scalediffuse="false">keep</aspectratio>
                 <height>26</height>
                 <left>66</left>
-                <texture>misc/matrix.png</texture>
+                <texture>misc/next.png</texture>
             </control>
         </control>
     </controls>

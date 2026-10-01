@@ -2281,7 +2281,7 @@
                     <colordiffuse>$VAR[OSDPanel]</colordiffuse>
                     <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
                     <texture border="16">common/rounded-shadow8.png</texture>
-                    <visible>Player.HasVideo</visible>
+                    <visible>Player.HasVideo + !Skin.HasSetting(osd.usethemeNewOSD)</visible>
                 </control>
                 <control type="image">
                     <description>background image</description>
@@ -2292,7 +2292,7 @@
                     <colordiffuse>$VAR[OSDPanel]</colordiffuse>
                     <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
                     <texture border="16">common/rounded-shadow8.png</texture>
-                    <visible>!Player.HasVideo</visible>
+                    <visible>!Player.HasVideo + !Skin.HasSetting(osd.usethemeNewOSD)</visible>
                 </control>
                 <control type="image">
                     <left>7</left>
@@ -2301,7 +2301,7 @@
                     <bottom>7</bottom>
                     <texture colordiffuse="$VAR[ColorBorder]" border="4" background="true" infill="false">common/box21.png</texture>
                     <animation effect="fade" start="100" end="80" condition="Skin.HasSetting(osd.usethemeNewOSD)">Conditional</animation>
-                    <visible>!Skin.HasSetting(thumbnails.white)</visible>
+                    <visible>!Skin.HasSetting(thumbnails.white) + !Skin.HasSetting(osd.usethemeNewOSD)</visible>
                 </control>
                 <control type="group">
                     <animation effect="slide" start="0" end="240" condition="!Player.HasVideo">Conditional</animation>
