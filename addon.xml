@@ -33,22 +33,9 @@
             <screenshot>resources/screenshot-10.jpg</screenshot>
         </assets>
         <news>1.0.0[CR]- First release</news>
-        <summary lang="de">Klar, minimalistisch, elegant, einfach, leicht. Basiert auf dem original Arctic: Zephyr Skin von jurialmunkey.</summary>
         <summary lang="en">Clean, minimal, elegant, simple, light. Based on the original Arctic: Zephyr Reloaded skin by jurialmunkey.</summary>
-        <summary lang="en_AU">Clean, minimal, elegant, simple, light. Based on the original Arctic: Zephyr Reloaded skin by jurialmunkey.</summary>
         <summary lang="en_US">Clean, minimal, elegant, simple, light. Based on the original Arctic: Zephyr Reloaded skin by jurialmunkey.</summary>
-        <summary lang="es">Limpio, minimalista, elegante, simple, ligero. Basado en el original Arctic: Zephyr Reloaded skin por jurialmunkey.</summary>
-        <summary lang="fr">Clair, minimaliste, élégant, simple et léger. Basé sur le skin original Arctic: Zephyr Reloaded par jurialmunkey.</summary>
-        <summary lang="fr_CA">Net, minimal, élégant, simple, léger. Basé sur le skin original Arctic: Zephyr Reloaded par jurialmunkey.</summary>
-        <summary lang="lt">Švari, minimali, elegantiška, paprasta, lengva. Basato sull&apos;originale Arctic: Zephyr Reloaded skin di jurialmunkey.</summary>
-        <summary lang="nl">Schoon, minimaal, elegant, simpel, licht. Gebaseerd op de originele Arctic: Zephyr Reloaded skin door jurialmunkey.</summary>
-        <summary lang="pl">Prosta, minimalista, elegancka i lekka. Na podstawie oryginalnego skinu Arctic: Zephyr Reloaded autorstwa jurialmunkey.</summary>
-        <summary lang="ro">Curat, minimalist, elegant, simplu, ușor. Bazat pe pielea originală Arctic: Zephyr Reloaded de jurialmunkey.</summary>
-        <summary lang="ru">Опрятный, минималистичный, элегантный, простой, светлый. Основано на оригинальном скине Arctic: Zephyr Reloaded от jurialmunkey.</summary>
-        <description lang="de">Arctic: Zephyr - Next basiert auf dem original Arctic: Zephyr Reloaded Skin von jurialmunkey.</description>
         <description lang="en">Arctic: Zephyr - Next is based on original Arctic: Zephyr Reloaded skin, created by jurialmunkey.</description>
-        <description lang="en_AU">Arctic: Zephyr - Next is based on original Arctic: Zephyr Reloaded skin, created by jurialmunkey.</description>
         <description lang="en_US">Arctic: Zephyr - Next is based on original Arctic: Zephyr Reloaded skin, created by jurialmunkey.</description>
-        <description lang="fr">Arctic: Zephyr - Next est basé sur le skin original Arctic: Zephyr Reloaded, créé par jurialmunkey.</description>
     </extension>
 </addon>
