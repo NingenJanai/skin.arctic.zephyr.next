@@ -2607,7 +2607,7 @@
     <include name="DialogCustomSettings">
         <control type="group">
             <visible allowhiddenfocus="true">ControlGroup(9400).HasFocus() + !Window.IsVisible(DialogBusy.xml)</visible>
-            <visible>![Window.IsVisible(DialogNumeric.xml) | Window.IsVisible(DialogSelect.xml) | Window.IsVisible(DialogKeyboard.xml)]</visible>
+            <visible>![Window.IsVisible(DialogVideoManager.xml) | Window.IsVisible(DialogNumeric.xml) | Window.IsVisible(DialogSelect.xml) | Window.IsVisible(DialogKeyboard.xml)]</visible>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <control type="image">
@@ -5208,7 +5208,7 @@
 			<param name="header_id" value="$PARAM[header_id]" />
 		</include>
 	</include>
-    
+
     <include name="DefaultDialogButton">
 		<param name="left">0</param>
 		<param name="width">300</param>
